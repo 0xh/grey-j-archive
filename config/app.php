@@ -161,6 +161,7 @@ return [
         /*
          * Package Service Providers that aren't auto-discover...
          */
+        Folklore\GraphQL\ServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -230,6 +231,7 @@ return [
         'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
+        'GraphQL' => Folklore\GraphQL\Support\Facades\GraphQL::class,
     ],
 
 ];
