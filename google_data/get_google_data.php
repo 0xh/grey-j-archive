@@ -1,5 +1,6 @@
 <?php
 require dirname(__DIR__).'/vendor/autoload.php';
+chdir(__DIR__);
 
 if (php_sapi_name() != 'cli') {
     throw new Exception('This application must be run on the command line.');
@@ -56,7 +57,7 @@ function getClient()
 
 function title_to_model_name($title) {
     static $specific_mappings = [
-        'Classes' => 'Class', // I tried doing some es plural handling, but it was false-positiving on Talent Trees.
+        'Character Classes' => 'CharacterClass', // I tried doing some es plural handling, but it was false-positiving on Talent Trees.
     ];
     if (isset($specific_mappings[$title])) return $specific_mappings[$title];
     $model_name = preg_replace('/ |s$/', '', $title);
