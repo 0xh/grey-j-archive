@@ -19,7 +19,7 @@ class CreateTalentsTable extends Migration
             $table->string('title');
             $table->string('talent_tree');
             $table->string('book');
-            $table->int('page');
+            $table->integer('page');
             $table->text('prerequisites')->nullable();
             $table->text('effect');
             $table->timestamps();

@@ -19,7 +19,7 @@ class CreateTalentTreesTable extends Migration
             $table->string('title');
             $table->string('class');
             $table->string('book');
-            $table->int('page');
+            $table->integer('page');
             $table->timestamps();
         });
     }

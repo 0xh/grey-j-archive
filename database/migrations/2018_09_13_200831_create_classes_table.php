@@ -18,7 +18,7 @@ class CreateClassesTable extends Migration
             $table->string('slug')->unique();
             $table->string('title');
             $table->string('book');
-            $table->int('page');
+            $table->integer('page');
             $table->text('prerequisites')->nullable();
             $table->timestamps();
         });
