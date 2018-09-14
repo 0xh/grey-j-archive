@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class TalentTree extends Model
 {
+    use AllButIdFillable;
     //
 }
