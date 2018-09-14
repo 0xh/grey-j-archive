@@ -125,6 +125,10 @@ return [
         'default' => [
             'query' => [
                 'books' => \App\GraphQL\Query\BooksQuery::class,
+                'character_classes' => \App\GraphQL\Query\CharacterClassesQuery::class,
+                'feats' => \App\GraphQL\Query\FeatsQuery::class,
+                'talents' => \App\GraphQL\Query\TalentsQuery::class,
+                'talent_trees' => \App\GraphQL\Query\TalentTreesQuery::class,
             ],
             'mutation' => [
                 'newBook' => \App\GraphQL\Mutation\NewBookMutation::class,
@@ -182,6 +186,10 @@ return [
      */
     'types' => [
         'Book' => \App\GraphQL\Type\BookType::class,
+        'CharacterClass' => \App\GraphQL\Type\CharacterClassType::class,
+        'Feat' => \App\GraphQL\Type\FeatType::class,
+        'Talent' => \App\GraphQL\Type\TalentType::class,
+        'TalentTree' => \App\GraphQL\Type\TalentTreeType::class,
     ],
 
     /*
